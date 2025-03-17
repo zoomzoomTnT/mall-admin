@@ -34,13 +34,26 @@ export type AgentRebateRecordDto = {
         nickname?: string | undefined
         avatar?: string | undefined
       }
+      /**
+       * 代理商编号
+       */
+      agentNo: string
     }
     walletRecord: {
       id: string
       createdTime: string
       editedTime: string
+      /**
+       * 金额
+       */
       amount: number
+      /**
+       * 类型如：提现，充值，奖励，返佣等等
+       */
       type: WalletRecordType
+      /**
+       * 描述信息
+       */
       description: string
     }
     fromAgent: {
@@ -50,6 +63,10 @@ export type AgentRebateRecordDto = {
         nickname?: string | undefined
         avatar?: string | undefined
       }
+      /**
+       * 代理商编号
+       */
+      agentNo: string
     }
     creator: {
       id: string

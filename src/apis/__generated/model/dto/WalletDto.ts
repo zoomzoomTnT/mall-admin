@@ -5,7 +5,13 @@ export type WalletDto = {
     id: string
     createdTime: string
     editedTime: string
+    /**
+     * 余额
+     */
     balance: number
+    /**
+     * 钱包密码
+     */
     password?: string | undefined
     creator: {
       id: string

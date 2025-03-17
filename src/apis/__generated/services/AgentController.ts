@@ -22,6 +22,11 @@ export class AgentController {
     >
   }
 
+  async qrCode(): Promise<Array<number>> {
+    const _uri = '/agent/qr-code'
+    return (await this.executor({ uri: _uri, method: 'POST' })) as Promise<Array<number>>
+  }
+
   async query(
     options: AgentControllerOptions['query']
   ): Promise<Page<AgentDto['AgentRepository/COMPLEX_FETCHER']>> {
@@ -54,4 +59,5 @@ export type AgentControllerOptions = {
   delete: {
     body: Array<string>
   }
+  qrCode: {}
 }

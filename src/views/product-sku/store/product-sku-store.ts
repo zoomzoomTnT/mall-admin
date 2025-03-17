@@ -9,6 +9,7 @@ import { ref } from 'vue'
 export const useProductSkuStore = defineStore('productSku', () => {
   const initQuery: ProductSkuSpec = {}
   const initForm: ProductSkuInput = {
+    productId: '',
     cover: '',
     description: '',
     name: '',

@@ -8,7 +8,13 @@ export type AgentLevelDto = {
     createdTime: string
     editedTime: string
     tenantId?: string | undefined
+    /**
+     * 等级名称
+     */
     levelName: AgentLevelName
+    /**
+     * 佣金比例
+     */
     rate: number
     creator: {
       id: string
