@@ -4,12 +4,13 @@ export const DictConstants = {
   PAY_TYPE: 1004,
   MENU_TYPE: 1002,
   PRODUCT_ORDER_STATUS: 1003,
+  VEHICLE_USAGE_STATUS: 2001,
   GENDER: 1001,
   COUPON_SCOPE: 1007,
   COUPON_USE_STATUS: 1008,
   COUPON_RECEIVE_TYPE: 1009,
   WALLET_RECORD_TYPE: 1010,
-  AGENT_LEVEL_NAME: 1011
+  AGENT_LEVEL: 1011
 }
 export const Dictionaries = {
   RefundStatus: {
@@ -184,6 +185,26 @@ export const Dictionaries = {
       orderNum: 0
     }
   },
+  VehicleUsageStatus: {
+    AVAILABLE: {
+      keyId: 0,
+      keyName: '空闲中',
+      keyEnName: 'AVAILABLE',
+      dictId: 2001,
+      dictName: '用车状态',
+      dictEnName: 'VEHICLE_USAGE_STATUS',
+      orderNum: 0
+    },
+    OCCUPIED: {
+      keyId: 1,
+      keyName: '使用中',
+      keyEnName: 'OCCUPIED',
+      dictId: 2001,
+      dictName: '用车状态',
+      dictEnName: 'VEHICLE_USAGE_STATUS',
+      orderNum: 0
+    }
+  },
   Gender: {
     PRIVATE: {
       keyId: 2,
@@ -311,14 +332,14 @@ export const Dictionaries = {
       orderNum: 0
     }
   },
-  AgentLevelName: {
+  AgentLevel: {
     FIRST: {
       keyId: 0,
       keyName: '1级',
       keyEnName: 'FIRST',
       dictId: 1011,
       dictName: '代理等级',
-      dictEnName: 'AGENT_LEVEL_NAME',
+      dictEnName: 'AGENT_LEVEL',
       orderNum: 0
     },
     SECOND: {
@@ -327,7 +348,7 @@ export const Dictionaries = {
       keyEnName: 'SECOND',
       dictId: 1011,
       dictName: '代理等级',
-      dictEnName: 'AGENT_LEVEL_NAME',
+      dictEnName: 'AGENT_LEVEL',
       orderNum: 0
     },
     THIRD: {
@@ -336,7 +357,7 @@ export const Dictionaries = {
       keyEnName: 'THIRD',
       dictId: 1011,
       dictName: '代理等级',
-      dictEnName: 'AGENT_LEVEL_NAME',
+      dictEnName: 'AGENT_LEVEL',
       orderNum: 0
     }
   }

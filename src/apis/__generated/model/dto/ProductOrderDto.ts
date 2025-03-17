@@ -11,6 +11,9 @@ export type ProductOrderDto = {
     remark: string
     status: ProductOrderStatus
     trackingNumber?: string | undefined
+    region?: string | undefined
+    language?: string | undefined
+    customerDetails?: string | undefined
     items: Array<{
       id: string
       productSku: {
@@ -19,7 +22,7 @@ export type ProductOrderDto = {
         editedTime: string
         values: Array<string>
         name: string
-        cover: string
+        cover?: string | undefined
         price: number
         stock: number
         description: string
@@ -29,7 +32,7 @@ export type ProductOrderDto = {
           editedTime: string
           name: string
           price: number
-          cover: string
+          cover?: string | undefined
           brand: string
           stock: number
           description: string

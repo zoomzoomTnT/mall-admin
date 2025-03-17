@@ -17,6 +17,9 @@ import {
   RoleController,
   UserController,
   UserWeChatController,
+  VehicleController,
+  VehicleTypeController,
+  VehicleUsageController,
   WalletController,
   WalletRecordController
 } from './services/'
@@ -56,6 +59,12 @@ export class Api {
 
   readonly userWeChatController: UserWeChatController
 
+  readonly vehicleController: VehicleController
+
+  readonly vehicleTypeController: VehicleTypeController
+
+  readonly vehicleUsageController: VehicleUsageController
+
   readonly walletRecordController: WalletRecordController
 
   readonly walletController: WalletController
@@ -78,6 +87,9 @@ export class Api {
     this.roleController = new RoleController(executor)
     this.userController = new UserController(executor)
     this.userWeChatController = new UserWeChatController(executor)
+    this.vehicleController = new VehicleController(executor)
+    this.vehicleTypeController = new VehicleTypeController(executor)
+    this.vehicleUsageController = new VehicleUsageController(executor)
     this.walletRecordController = new WalletRecordController(executor)
     this.walletController = new WalletController(executor)
   }

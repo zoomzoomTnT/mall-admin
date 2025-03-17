@@ -7,7 +7,7 @@ export type ProductSkuDto = {
     editedTime: string
     values: Array<string>
     name: string
-    cover: string
+    cover?: string | undefined
     price: number
     stock: number
     description: string

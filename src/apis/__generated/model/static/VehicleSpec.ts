@@ -1,0 +1,23 @@
+export interface VehicleSpec {
+  milage?: number | undefined
+  defaultPrice?: number | undefined
+  top?: boolean | undefined
+  minResetTimeTire?: string | undefined
+  maxResetTimeTire?: string | undefined
+  minResetTimeEngineOil?: string | undefined
+  maxResetTimeEngineOil?: string | undefined
+  licensePlate?: string | undefined
+  defaultGarage?: string | undefined
+  details?: string | undefined
+  id?: string | undefined
+  minCreatedTime?: string | undefined
+  maxCreatedTime?: string | undefined
+  minEditedTime?: string | undefined
+  maxEditedTime?: string | undefined
+  vehicleUsageIds?: Array<string> | undefined
+  typeName?: string | undefined
+  manufacturer?: string | undefined
+  typeSize?: string | undefined
+  minTypeSizeExclusive?: string | undefined
+  fuelType?: string | undefined
+}

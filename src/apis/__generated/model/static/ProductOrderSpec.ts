@@ -9,6 +9,9 @@ import type {
 export interface ProductOrderSpec {
   status?: ProductOrderStatus | undefined
   trackingNumber?: string | undefined
+  region?: string | undefined
+  language?: string | undefined
+  customerDetails?: string | undefined
   remark?: string | undefined
   id?: string | undefined
   minCreatedTime?: string | undefined

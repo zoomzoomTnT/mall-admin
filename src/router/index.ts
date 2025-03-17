@@ -15,6 +15,9 @@ import CouponUserView from '@/views/coupon-user/coupon-user-view.vue'
 import agentView from '@/views/agent/agent-view.vue'
 import agentLevelView from '@/views/agent-level/agent-level-view.vue'
 import AgentRebateRecordView from '@/views/agent-rebate-record/agent-rebate-record-view.vue'
+import VehicleView from '@/views/vehicle/vehicle-view.vue'
+import VehicleTypeView from '@/views/vehicle-type/vehicle-type-view.vue'
+import VehicleUsageView from '@/views/vehicle-usage/vehicle-usage-view.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -84,6 +87,21 @@ const router = createRouter({
           path: '/agent-rebate-record',
           name: 'agent-rebate-record-view',
           component: AgentRebateRecordView
+        },
+        {
+          path: '/vehicle',
+          name: 'vehicle-view',
+          component: VehicleView
+        },
+        {
+          path: 'vehicle-type',
+          name: 'vehicle-type-view',
+          component: VehicleTypeView
+        },
+        {
+          path: '/vehicle-usage',
+          name: 'vehicle-usage-view',
+          component: VehicleUsageView
         }
       ]
     },

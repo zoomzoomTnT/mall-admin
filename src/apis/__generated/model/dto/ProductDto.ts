@@ -9,7 +9,7 @@ export type ProductDto = {
     editedTime: string
     name: string
     price: number
-    cover: string
+    cover?: string | undefined
     brand: string
     stock: number
     description: string
@@ -36,7 +36,7 @@ export type ProductDto = {
     editedTime: string
     name: string
     price: number
-    cover: string
+    cover?: string | undefined
     brand: string
     stock: number
     description: string
@@ -50,7 +50,7 @@ export type ProductDto = {
       editedTime: string
       values: Array<string>
       name: string
-      cover: string
+      cover?: string | undefined
       price: number
       stock: number
       description: string

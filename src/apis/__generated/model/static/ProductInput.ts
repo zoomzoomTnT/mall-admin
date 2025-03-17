@@ -3,7 +3,7 @@ import type { KeyValue } from './'
 export interface ProductInput {
   name: string
   price: number
-  cover: string
+  cover?: string | undefined
   brand: string
   stock: number
   description: string
